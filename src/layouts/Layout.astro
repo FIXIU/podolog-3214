@@ -5,18 +5,27 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Podolog Sosnowiec</title>
 	</head>
 	<body>
-		<slot />
+		<nav>
+			<div class="flex flex-row justify-evenly">
+				<div><a href="#">Dom</a></div>
+				<div><a href="#">Kontakt</a></div>
+				<div><a href="#">Cennik</a></div>
+			</div>
+		</nav>
+		<slot/>
 	</body>
 </html>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'Montserrat', sans-serif;
 	}
 </style>
